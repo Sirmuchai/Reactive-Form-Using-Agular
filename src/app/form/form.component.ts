@@ -8,16 +8,7 @@ import {FormGroup, FormControl} from '@angular/forms'
 })
 export class FormComponent {
 
-  lastName: string | undefined;
 
-  printClicked(){
-    console.log("I have been clicked");
-  }
-//Data binding
-  onKeyUp(firstname: any){
-    console.log(firstname);
-  }
-//Two way data binding
 registerForm = new FormGroup({
   firstName:new FormControl(''),
   lastName:new FormControl('')
