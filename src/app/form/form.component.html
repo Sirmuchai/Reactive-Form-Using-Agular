@@ -1,0 +1,19 @@
+<div class="card-center" style="width: 18rem;">
+    <div class="card-header">
+      Application Form
+    </div>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmitRegisterForm" >
+      <div class="md-3">
+        <label for="fname">First name:</label><br>
+        <input type="text" placeholder="FirstName" formControlName="firstName"><br>
+      </div>
+      <div class="md-3">
+        <label for="lname">Last name:</label><br>
+        <input type="text" placeholder="LastName" formControlName="lastName"><br><br>
+      </div>
+      <div class="md-3">
+        <!-- Event binding (action/event)= 'functionCall()'-->
+        <button (click)='onSubmitRegisterForm()'>Submit</button>
+      </div>        
+    </form>    
+  </div> 
