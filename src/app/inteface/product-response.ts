@@ -1,7 +1,7 @@
 import { Meta } from "./meta"
-import { Product } from "./product"
+import { Data } from "./product"
 
 export interface ProductResponse {
-    data: Product[];
+    data: Data[];
     meta: Meta;
 }
