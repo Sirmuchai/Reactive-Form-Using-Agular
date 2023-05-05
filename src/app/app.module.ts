@@ -8,6 +8,7 @@ import { FormComponent } from './components/form/form.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProductService } from './services/product.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProductService } from './services/product.service';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    FormsModule    
+    FormsModule,
+    HttpClientModule    
   ],
   providers: [],
   bootstrap: [AppComponent ]

@@ -11,6 +11,7 @@ export class ProductComponent implements OnInit {
   constructor(private productService: ProductService){}
 
   ngOnInit(): void {
+    this.onGetComment();
     this.onGetProducts();
   }
 
@@ -20,6 +21,15 @@ export class ProductComponent implements OnInit {
       (error:any)=>console.log(error),
       () => console.log('Done getting products')
       );
+  }
+  
+  onGetComment(): void{
+    this.productService.getComment().subscribe(
+      (response)=> console.log(response),
+      (error:any)=>console.log(error),
+      () => console.log('Done getting products')
+      );
+
   }
 
 }
