@@ -3,25 +3,26 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { ProductResponse } from '../inteface/product-response';
 import { Comment } from '../inteface/post/comment';
-import { environment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment.development';
  
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-  private apiUrl = environment.apiUrl;
+  private apiUrl_1 = environment.apiUrl_1;
+  private apiUrl_2 = environment.apiUrl_2;
 
   constructor(private http: HttpClient) { 
 
   }
 
   getProducts(): Observable<ProductResponse>{
-    return this.http.get<ProductResponse>('http://localhost:1337/api/products');
+    return this.http.get<ProductResponse>(`${this.apiUrl_1}/api/products`);
   }
 
   getComment(): Observable<Comment>{
-    return this.http.get<Comment>('https://jsonplaceholder.typicode.com/posts/1');
+    return this.http.get<Comment>(`${this.apiUrl_2}/posts/1`);
   }
 
   }
