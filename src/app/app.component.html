@@ -1,7 +1,8 @@
 <div class="container">
   <h1>Welcome to Home Component</h1>
-  <a href="products" class="btn btn-info" role="button">My Blog</a>
-  <app-header></app-header>
-  <app-form></app-form>   
-  <app-footer></app-footer>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="nav-link active"  routerLink ="/products" routerLinkActive="active">Products</a>
+    <a routerLink ="/forms" routerLinkActive="active">Forms</a>
+  </nav>
 </div>
+<router-outlet></router-outlet>
