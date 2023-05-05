@@ -17,13 +17,17 @@ export class ProductService {
 
   }
 
-  getProducts(): Observable<ProductResponse>{
-    return this.http.get<ProductResponse>(`${this.apiUrl_1}/api/products`);
+  getProducts(): Observable<ProductResponse[]>{
+    return this.http.get<ProductResponse[]>(`${this.apiUrl_1}/api/products`);
   }
 
-  getComment(): Observable<Comment>{
-    return this.http.get<Comment>(`${this.apiUrl_2}/posts/1`);
+  getComment(): Observable<Comment[]>{
+    return this.http.get<Comment[]>(`${this.apiUrl_2}/posts`);
   }
+
+  createComment(comment: Comment):Observable<Comment>{
+    return this.http.post<Comment>(`${this.apiUrl_2}/posts`,comment);
+  } 
 
   }
 
