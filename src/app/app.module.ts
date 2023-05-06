@@ -9,6 +9,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProductComponent } from './components/product/product.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { HomeComponent } from './components/home/home.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { AppRoutingModule } from './app-routing.module';
     HeaderComponent,
     FormComponent,
     FooterComponent,
-    ProductComponent
+    ProductComponent,
+    SidenavComponent,
+    HomeComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
