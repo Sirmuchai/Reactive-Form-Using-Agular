@@ -1,13 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
 
-  message:string = "Welcome to String Interpration in Types scripting using `{{}}` and property binding using `[]`"
-  imgUrl:string = "https://www.shutterstock.com/image-vector/two-hands-creation-adam-design-600w-1838732326.jpg"
+  @Output() toggeleSidebarForMe: EventEmitter<any> = new EventEmitter;
 
+
+  ngOnInit(): void {
+
+   }
+
+  toggleSidebar(){
+    this.toggeleSidebarForMe.emit();
+  }
+
+  
 }

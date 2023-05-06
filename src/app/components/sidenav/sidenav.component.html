@@ -1,1 +1,21 @@
-<p>sidenav works!</p>
+<mat-nav-list>
+    <div class="logo py-4">
+        <img src="../../../assets/logo.jpg" alt="Company Logo">
+    </div>
+    <mat-divider></mat-divider>
+    <h2 matSubheader class="mt-2">APPLICATIONS</h2>
+    
+    <a mat-list-item routerLink="dashboard" routerLinkActive="list-item-active">                
+        <mat-icon>dashboard</mat-icon> Dashboard                
+    </a>
+    
+    <a mat-list-item routerLink="home" routerLinkActive="list-item-active">
+        <mat-icon>home</mat-icon> Home
+    </a>
+    <a mat-list-item routerLink="products" routerLinkActive="list-item-active">
+        <mat-icon>list-alt</mat-icon> Products
+    </a>
+    <a mat-list-item routerLink="forms" routerLinkActive="list-item-active">
+        <mat-icon>book</mat-icon> Forms
+    </a>
+</mat-nav-list>
