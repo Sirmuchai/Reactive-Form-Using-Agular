@@ -20,6 +20,7 @@ import { ProductComponent } from './components/product/product.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { TestComponent } from './components/test/test.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     ProductComponent,
     SidenavComponent,
     HomeComponent,
-    DashboardComponent
+    DashboardComponent,
+    TestComponent
 
   ],
   imports: [
