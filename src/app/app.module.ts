@@ -10,6 +10,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TestComponent } from './components/test/test.component';
+import { CardComponent } from './components/card/card.component';
 
 
 @NgModule({
@@ -33,7 +35,8 @@ import { TestComponent } from './components/test/test.component';
     SidenavComponent,
     HomeComponent,
     DashboardComponent,
-    TestComponent
+    TestComponent,
+    CardComponent
 
   ],
   imports: [
@@ -49,6 +52,7 @@ import { TestComponent } from './components/test/test.component';
     MatDividerModule,
     MatListModule,
     MatButtonModule,
+    MatCardModule,
     BrowserAnimationsModule
         
   ],

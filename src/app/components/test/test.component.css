@@ -1,0 +1,26 @@
+.onboardingScreen {
+    width: 360px;
+    height: 800px;
+
+    background: #FFFFFF;
+}
+.upper{
+    height: 477px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3),
+     rgba(0, 0, 0, 0.3)), 
+     url(../../../assets/patrick-campanale-oCsQLKENz34-unsplash-e1679842037191.jpg);
+
+}
+.lower{
+    height: 460px;
+    background: linear-gradient(35.6deg, #195031 8%, #21542F 46.97%, #62781F 99.85%);
+}
+button{
+    background: #FFFFFF;
+    border: 1px solid #FBFAF9;
+    /* 1 */
+
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12);
+    border-radius: 28px;
+    
+}
